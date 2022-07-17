@@ -31,7 +31,7 @@ function RSToggle() {
             <a href="https://github.com/DevWantsBTC/RuneScape-in-C" target="_blank">
                 <img src="pics/github logo.png" alt="GitHub Logo" width="40" height="40">
             </a>
-            <a href="https://youtube.com/embed/h1mt6AdUYqM" target="_blank">
+            <a href="https://www.youtube.com/watch?v=h1mt6AdUYqM" target="_blank">
                 <img src="pics/youtube logo.png" alt="YouTube Logo" width="40" height="40">
             </a>
         </p>`
