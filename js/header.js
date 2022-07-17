@@ -10,14 +10,12 @@ class Header extends HTMLElement {
                     <li class="top-logo"><a class="top-a top-logo" href="index.html">devon|martin</a></li>
                     <li class="top-li"><a class="top-a" href="log-in.html">Log In</a></li>
                     <li class="top-li"><a class="top-a" href="contact-me.html">Contact Me</a></li>
-                    <li class="top-li"><a class="top-a" href="gallery.html">Gallery</a></li>
                     <li class="top-li"><a class="top-a" href="about-me.html">About Me</a></li>
                 </ul>
             </nav>
             <nav id="side-id" class="side-nav">
                 <ul class="side-ul">
                     <li class="side-li"><a class="side-a" href="about-me.html">About Me</a></li>
-                    <li class="side-li"><a class="side-a" href="gallery.html">Gallery</a></li>
                     <li class="side-li"><a class="side-a" href="contact-me.html">Contact Me</a></li>
                     <li class="side-li"><a class="side-a" href="log-in.html">Log In</a></li>
                 </ul>
