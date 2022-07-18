@@ -143,13 +143,6 @@
     width: auto;
 }
 
-.picture-selfie {
-    height: auto;
-    max-height: 442px;
-    max-width: 237px;
-    width: auto;
-}
-
 .picwheel {
     background-color: blue;
     border-radius: 25px;
