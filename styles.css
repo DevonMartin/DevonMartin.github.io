@@ -103,6 +103,31 @@
     padding-right: 75px;
 }
 
+.container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 100%; */
+}
+
+.course-grid {
+    margin: 0;
+    padding: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.course-table {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
 .input {
     display: block;
     margin-bottom: 5px !important;
