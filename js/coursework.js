@@ -22,11 +22,3 @@ async function getCourses() {
     }
     document.getElementById("CS50x").innerHTML = tdhtml
 }
-
-// NOTE: RUN WITH HTTP://, NOT FILE://
-window.addEventListener("load", () => {
-    fetch("1b-database.php", { method : "POST" })
-    .then(res => res.text()).then((txt) => {
-      document.getElementById("demo").innerHTML = txt;
-    });
-  });
