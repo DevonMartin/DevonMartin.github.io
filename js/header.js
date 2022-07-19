@@ -7,7 +7,7 @@ class Header extends HTMLElement {
         this.innerHTML = `
             <nav class="top-nav">
                 <ul class="top-ul">
-                    <li class="top-logo"><a class="top-a top-logo" href="index.html">devon|martin</a></li>
+                    <li class="top-logo"><a class="top-a top-logo" href="index.html"><img src="pics/banner.tiff" alt="Photo of Devon" height="52" width="126"></a></li>
                     <li class="top-li"><a class="top-a" href="log-in.html">Log In</a></li>
                     <li class="top-li"><a class="top-a" href="contact-me.html">Contact Me</a></li>
                     <li class="top-li"><a class="top-a" href="about-me.html">About Me</a></li>
