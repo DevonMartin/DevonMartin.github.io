@@ -103,12 +103,17 @@
     padding-right: 75px;
 }
 
-.container {
+.container-web {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     /* margin-left: auto;
     margin-right: auto;
     width: 100%; */
+}
+
+.container-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .course-grid {
