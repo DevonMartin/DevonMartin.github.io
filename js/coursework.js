@@ -12,6 +12,15 @@ if (nextDate.getMinutes() % 1 === 0) {
 
 async function getCourses() {
 
+    var x = window.matchMedia("(max-width: 450px)")
+
+    if (x.matches) { // If media query matches
+        document.getElementById("CS50x-header").innerHTML = `CS50x<div id="CS50x-proj"></div>`
+        document.getElementById("CS61A-header").innerHTML = `CS61A<div id="CS61A-proj"></div>`
+        document.getElementById("CS61B-header").innerHTML = `CS61B<div id="CS61B-proj"></div>`
+        document.getElementById("CS61C-header").innerHTML = `CS61C<div id="CS61C-proj"></div>`
+    }
+
     // BEGIN CS50x
 
     res = await fetch('https://api.github.com/repos/DevonMartin/CS50x/contents/fin')
@@ -41,7 +50,7 @@ async function getCourses() {
     for (i = 1; i < x; i+=1) {
         CS50html += `<div class="course-grid" style="background-color: red;">` + (answer[i]['name']) + `</div>`
     }
-    document.getElementById("CS50x").innerHTML = CS50html
+    document.getElementById("CS50x-proj").innerHTML = CS50html
 
     // END CS50x
     // BEGIN CS61A
@@ -76,13 +85,13 @@ async function getCourses() {
     // for (i = 0; i < CS50len - CS61Alen; i+=1) {
     //     CS61Ahtml += `<div class="course-grid" style="border-color:white">&zwnj;</div>`
     // }
-    document.getElementById("CS61A").innerHTML = CS61Ahtml
+    document.getElementById("CS61A-proj").innerHTML = CS61Ahtml
 
     // END CS61A
     // START Unstarted Courses
 
     unstartedHtml = `<div class="course-grid" style="background-color: red;">Not Yet Started</div>`
-    document.getElementById("CS61B").innerHTML = unstartedHtml
-    document.getElementById("CS61C").innerHTML = unstartedHtml
+    document.getElementById("CS61B-proj").innerHTML = unstartedHtml
+    document.getElementById("CS61C-proj").innerHTML = unstartedHtml
 
 }
