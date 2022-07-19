@@ -297,12 +297,9 @@
     }
 
     .side-logo {
-        color: #818181;
         display: inline;
-        font-size: 36px;
-        font-weight: 1000;
+        font-size: 32px;
         padding-left: 15px;
-        text-decoration: none;
     }
 
     .side-logo:hover {
@@ -313,12 +310,10 @@
         background-color: #f3f3f3;
         font-size: 18px;
         height: 100%;
-        overflow-x: hidden;
-        padding-top: 15px;
         position: fixed;
         right: 0;
         text-align: center;
-        top: 0;
+        top: 56;
         transition: 0.5s;
         width: 0;
         z-index: 2;
@@ -335,15 +330,17 @@
     .side-topbar {
         background-color: #f3f3f3;
         border: 1px solid #e7e7e7;
-        margin-bottom: 15px;
+        padding-bottom: 4px;
         position: sticky;
+        top: 0;
         transition: 0.5s;
-        z-index: 3;
+        width: 100%;
+        z-index: 2;
     }
 
     .side-ul {
         padding-left: 0 !important;
-        padding-top: 35px;
+        padding-top: 60px;
         text-decoration: none;
     }
 
