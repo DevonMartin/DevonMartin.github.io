@@ -106,11 +106,13 @@
 .container-web {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding: 25px;
 }
 
 .container-mobile {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 25px;
 }
 
 .course-grid {
