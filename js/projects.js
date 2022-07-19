@@ -28,7 +28,7 @@ function RSToggle() {
     let phone = `
         <p>This is my text-based recreation of the MMORPG RuneScape in the programming language C.</p>
         <p>
-            <a href="https://github.com/DevWantsBTC/RuneScape-in-C" target="_blank">
+            <a href="https://github.com/DevWantsBTC/RuneScape-in-C" style="text-decoration: none;" target="_blank">
                 <img src="pics/github logo.png" alt="GitHub Logo" width="40" height="40">
             </a>
             <a href="https://www.youtube.com/watch?v=h1mt6AdUYqM" target="_blank">

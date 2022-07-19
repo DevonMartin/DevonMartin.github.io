@@ -65,6 +65,10 @@
 
 /* END Toggle Switch */
 
+.background-color {
+    color: white;
+}
+
 .body-div {
     padding: 2px 50px;
 }
