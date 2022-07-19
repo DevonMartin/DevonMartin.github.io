@@ -103,16 +103,29 @@
     padding-right: 75px;
 }
 
-.container-web {
+.container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     padding: 25px;
 }
 
-.container-mobile {
-    display: grid;
+.container-4-col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container-2-col {
     grid-template-columns: repeat(2, 1fr);
-    padding: 25px;
+}
+
+.course-bkgr-green {
+    background-color: #88c45e;
+}
+
+.course-bkgr-yellow {
+    background-color: #ddb781;
+}
+
+.course-bkgr-red {
+    background-color: #d46d6c;
 }
 
 .course-grid {
