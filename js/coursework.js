@@ -52,7 +52,7 @@ async function getCourses() {
     x = answer.length
 
     for (i = 1; i < x; i+=1) {
-        CS50html += `<div class="course-grid course-bkgr-green">` + (answer[i]['name']) + `</div>`
+        CS50html += `<a href="` + (answer[i]['html_url']) + `" target="_blank"><div class="course-grid course-bkgr-green">` + (answer[i]['name']) + `</div></a>`
     }
 
     res = await fetch('https://api.github.com/repos/DevonMartin/CS50x/contents/inprog')
@@ -60,7 +60,7 @@ async function getCourses() {
     x = answer.length
 
     for (i = 1; i < x; i+=1) {
-        CS50html += `<div class="course-grid" style="background-color:yellow;">` + (answer[i]['name']) + `</div>`
+        CS50html += `<a href="` + (answer[i]['html_url']) + `" target="_blank"><div class="course-grid course-bkgr-yellow">` + (answer[i]['name']) + `</div></a>`
     }
 
     res = await fetch('https://api.github.com/repos/DevonMartin/CS50x/contents/todo')
@@ -68,7 +68,7 @@ async function getCourses() {
     x = answer.length
 
     for (i = 1; i < x; i+=1) {
-        CS50html += `<div class="course-grid" style="background-color:red;">` + (answer[i]['name']) + `</div>`
+        CS50html += `<div class="course-grid course-bkgr-red">` + (answer[i]['name']) + `</div>`
     }
     document.getElementById("CS50x-proj").innerHTML = CS50html
 
@@ -81,7 +81,7 @@ async function getCourses() {
     x = answer.length
 
     for (i = 1; i < x; i+=1) {
-        CS61Ahtml += `<div class="course-grid course-bkgr-green">` + (answer[i]['name']) + `</div>`
+        CS61Ahtml += `<a href="` + (answer[i]['html_url']) + `" target="_blank"><div class="course-grid course-bkgr-green">` + (answer[i]['name']) + `</div></a>`
     }
 
     res = await fetch('https://api.github.com/repos/DevonMartin/CS61A/contents/inprog')
@@ -89,7 +89,7 @@ async function getCourses() {
     x = answer.length
 
     for (i = 1; i < x; i+=1) {
-        CS61Ahtml += `<div class="course-grid course-bkgr-yellow">` + (answer[i]['name']) + `</div>`
+        CS61Ahtml += `<a href="` + (answer[i]['html_url']) + `" target="_blank"><div class="course-grid course-bkgr-yellow">` + (answer[i]['name']) + `</div></a>`
     }
 
     res = await fetch('https://api.github.com/repos/DevonMartin/CS61A/contents/todo')
