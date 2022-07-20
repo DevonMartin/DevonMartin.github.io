@@ -5,6 +5,8 @@ class Header extends HTMLElement {
   
     connectedCallback() {
         this.innerHTML = `
+        </head>
+        <body>
             <nav class="top-nav">
                 <ul class="top-ul">
                     <li class="top-logo"><a class="top-a top-logo" href="index.html"><img src="pics/banner.png" alt="Banner for devonmartin.net" height="52" width="126"></a></li>

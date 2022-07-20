@@ -328,6 +328,7 @@
 .switch {
     position: relative;
     display: inline-block;
+    margin-bottom: 7;
     width: 30px;
     height: 17px;
     z-index: 0;
