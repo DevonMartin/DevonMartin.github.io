@@ -1,3 +1,7 @@
+.below-header {
+    margin-top: 25px !important;
+}
+
 .bkgr-1 {
     color: white;
 }
@@ -5,6 +9,10 @@
 .bkgr-2 {
     background-color: #f3f3f3;
     border: 1px solid #e7e7e7;
+}
+
+.bkgr-2-no-border {
+    background-color: #f3f3f3;
 }
 
 .body-div {
@@ -21,27 +29,10 @@
     padding: 10px 20px;
 }
 
-.contact-button {
-    margin-bottom: 25px;
-}
-
-.contact-error {
-    margin-bottom: 25px;
-    margin-left: 25%;
-    width: 50%;
-}
-
 .contact-form {
     align-items: center;
-    margin-bottom: 20px;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin: 1.5rem 20vw;
     text-align: center;
-}
-
-.contact-input {
-    display: inline;
-    width: 80%;
 }
 
 .contact-p {
@@ -51,15 +42,16 @@
 
 .container {
     display: grid;
+    grid-row-gap: 40px;
     padding: 25px;
-}
-
-.container-4-col {
-    grid-template-columns: repeat(4, 1fr);
 }
 
 .container-2-col {
     grid-template-columns: repeat(2, 1fr);
+}
+
+.container-4-col {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .course-bkgr-green {
@@ -91,62 +83,12 @@
     border-color: black;
 }
 
-.input {
-    display: block;
-    margin-bottom: 5px !important;
+.bolder {
+    font-weight: bolder;
 }
 
-.input span {
-    position: absolute;
-    z-index: 1;
-    cursor: text;
-    pointer-events: none;
-    color: #999;
-    padding: 7px;
-    line-height: 17px;
-    margin-left: 2px;
-}
-
-.input input, .input textarea, .input select {
-    z-index: 0;
-    padding: 6px;
-    margin: 0;
-    font: inherit;
-    line-height: 17px;
-    max-width: 450px;
-}
-
-.input select {
-    padding: 5px;
-    height: 31px;
-}
-
-.picture-code {
-    float: left;
-    height: auto;
-    max-height: 80vh;
-    max-width: 80vw;
-    padding-left: 6vw;
-    padding-right: 6vw;
-    width: auto;
-}
-
-.picwheel {
-    background-color: blue;
-    border-radius: 25px;
-    color: white;
-    margin-left: 6vw;
-    padding: 1vw;
-    width: 100vw;
-}
-
-.picwheel-li {
-    margin-bottom: 3vh;
-}
-
-.picwheel-ul {
-    padding-top: 2vh;
-    list-style: none;
+.fw-normal {
+    font-weight: normal;
 }
 
 .reference > sup {
@@ -159,10 +101,6 @@
 
 .reference > a:link {
     text-decoration: none;
-}
-
-.side-a, .side-li, .side-logo, .side-span {
-    display: none;
 }
   
 .top-a {
@@ -188,13 +126,10 @@
 }
   
 .top-logo {
-    font-weight: 1000 !important;
     float: left;
-    margin: 0;
+    margin: 0, 15px;
     padding-top: 0;
     padding-bottom: 0;
-    margin-left: 15px;
-    margin-right: 15px;
 }
 
 .top-nav {
@@ -202,8 +137,6 @@
 }
 
 .top-ul {
-    background-color: #f3f3f3;
-    border: 1px solid #e7e7e7;
     list-style-type: none;
     margin: 0;
     overflow: hidden;
@@ -230,12 +163,6 @@
 }
 
 @media screen and (max-width:450px) {
-    .contact-error {
-        margin-bottom: 25px;
-        margin-left: 20%;
-        width: 60%;
-    }
-    
     .contact-form {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -270,7 +197,7 @@
         height: 12.5vh;
     }
 
-    .side-logo {
+    .mobile-logo {
         display: inline;
         font-size: 32px;
         padding-left: 15px;
@@ -281,7 +208,6 @@
     }
 
     .side-nav {
-        background-color: #f3f3f3;
         font-size: 18px;
         height: 100%;
         position: fixed;
@@ -301,10 +227,9 @@
         padding-right: 15px;
     }
 
-    .side-topbar {
-        background-color: #f3f3f3;
-        border: 1px solid #e7e7e7;
+    .mobile-topbar {
         padding-bottom: 4px;
+        position: -webkit-sticky;
         position: sticky;
         top: 0;
         transition: 0.5s;
@@ -317,14 +242,11 @@
         padding-top: 60px;
         text-decoration: none;
     }
-
-    .top-nav, .top-ul {
-        display: none !important;
-    }
 }
 
-/* BEGIN Toggle Switch borrowed from https://www.w3schools.com/howto/howto_css_switch.asp */
-/* The switch - the box around the slider */
+/* BEGIN Toggle Switch borrowed from https://www.w3schools.com/howto/howto_css_switch.asp 
+    Manually adjusted to a smaller size.
+The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;

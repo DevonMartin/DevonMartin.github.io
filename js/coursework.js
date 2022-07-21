@@ -1,45 +1,13 @@
-function initMobileTable() {
+function sizeTable() {
 
     // Adjust header for mobile
     var x = window.matchMedia("(max-width: 450px)")
     if (x.matches) { // If media query matches
 
-        document.getElementById('course-table').innerHTML = `
-            <div class="container container-2-col">
-                <div class="course-grid" id="CS50x-header">
-                    CS50x
-                    <div id="CS50x-proj"></div>
-                </div>
-                <div class="course-grid" id="CS61A-header">
-                    CS61A
-                    <div id="CS61A-proj"></div>
-                </div>
-            </div>
-            <div class="container container-2-col">
-                <div class="course-grid" id="CS61B-header">
-                    CS61B
-                    <div id="CS61B-proj"></div>
-                </div>
-                <div class="course-grid" id="CS61C-header">
-                    CS61C
-                    <div id="CS61C-proj"></div>
-                </div>
-            </div>`
+        document.getElementById('coursework-container').className = ("container container-2-col")
+    } else {
+        document.getElementById('coursework-container').className = ("container container-4-col")
     }
-}
-
-initMobileTable()
-
-var nextDate = new Date();
-if (nextDate.getMinutes() % 1 === 0) {
-    getCourses()
-} else {
-    nextDate.setHours(nextDate.getHours() + 1);
-    nextDate.setMinutes(0);
-    nextDate.setSeconds(0);
-
-    var difference = nextDate - new Date();
-    setTimeout(getCourses, difference);
 }
 
 async function getCourses() {
@@ -101,7 +69,7 @@ async function getCourses() {
     }
     document.getElementById("CS61A-proj").innerHTML = CS61Ahtml
 
-    // END CS61A
+    // // END CS61A
     // START Unstarted Courses
 
     unstartedHtml = `<div class="course-grid course-bkgr-red">Not Yet Started</div>`
@@ -111,3 +79,23 @@ async function getCourses() {
     // END Unstarted Courses
 
 }
+
+function getCoursesTesting() {
+    document.getElementById("CS50x-proj").innerHTML = `<div class="course-grid course-bkgr-red">test</div>`
+    document.getElementById("CS61A-proj").innerHTML = `<div class="course-grid course-bkgr-red">test</div>`
+    unstartedHtml = `<div class="course-grid course-bkgr-red">Not Yet Started</div>`
+    document.getElementById("CS61B-proj").innerHTML = unstartedHtml
+    document.getElementById("CS61C-proj").innerHTML = unstartedHtml
+}
+
+sizeTable()
+
+if (true) {
+    getCourses()
+} else {
+    getCoursesTesting()
+}
+
+window.addEventListener('resize', function(event) {
+    sizeTable()
+}, true);
