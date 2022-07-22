@@ -135,7 +135,7 @@ function closeNav() {
 
 
 
-testing = true;
+testing = false;
 
 if (testing) {
     loadCoursesTesting()
