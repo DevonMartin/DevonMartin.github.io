@@ -1,7 +1,7 @@
-.below-header {
-    margin-top: 25px !important;
-}
-
+html {
+    scroll-behavior: smooth;
+    }
+    
 .bkgr-1 {
     color: white;
 }
@@ -19,39 +19,28 @@
     padding: 2px 50px;
 }
 
-.button {
-    cursor: pointer;
-}
-
 .clean-box {
     margin-bottom: 20px;
     max-width: 850px;
     padding: 10px 20px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
 }
 
 .contact-form {
-    align-items: center;
     margin: 1.5rem 20vw;
-    text-align: center;
 }
 
-.contact-p {
+.contact-form > p { 
     padding-left: 75px;
     padding-right: 75px;
 }
 
-.container {
+.coursework-container {
+    align-items: center;
     display: grid;
     grid-row-gap: 40px;
     padding: 25px;
-}
-
-.container-2-col {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.container-4-col {
-    grid-template-columns: repeat(4, 1fr);
 }
 
 .course-bkgr-green {
@@ -70,20 +59,10 @@
     border-color: black;
     border-style: solid;
     color: black;
-    margin: 0;
     padding: 2px;
 }
 
-.course-table {
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2px;
-    border-style: solid;
-    border-color: black;
-}
-
-.bolder {
+.fw-bolder {
     font-weight: bolder;
 }
 
@@ -91,16 +70,37 @@
     font-weight: normal;
 }
 
-.reference > sup {
-    font-size: 80%;
-    font-style: normal;
-    line-height: 1;
+.grid-2-col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-4-col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.reference > a {
+    scroll-margin-top: 60px;
     text-decoration: none;
-    white-space: nowrap;
 }
 
 .reference > a:link {
     text-decoration: none;
+}
+
+sup.reference > a {
+    font-size: 80%;
+    font-style: normal;
+    line-height: 1;
+    scroll-margin-top: 60px;
+    white-space: nowrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
 }
   
 .top-a {
@@ -127,7 +127,6 @@
   
 .top-logo {
     float: left;
-    margin: 0, 15px;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -168,7 +167,7 @@
         margin-right: 5vw;
     }
 
-    .contact-p {
+    .contact-form > p {
         padding-left: 25px;
         padding-right: 25px;
     }
